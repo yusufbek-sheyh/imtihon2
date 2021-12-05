@@ -1,0 +1,140 @@
+.hero {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  &__content {
+    h1 {
+      color: $primary;
+      font-size: 32px;
+      font-family: "DM Serif Display";
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 15px;
+
+      input {
+        border-radius: 100px;
+        box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.1);
+        font-family: "Public Sans";
+
+        &::placeholder {
+          color: $gray;
+          font-weight: 600;
+        }
+      }
+
+      .btn {
+        border: none;
+        width: 100%;
+      }
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: $gray;
+
+      a {
+        color: $primary;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__img {
+    height: 250px;
+    background: url("/assets/home/desktop/illustration-phone-mockup.svg");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: top -33px center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      gap: 60px;
+    }
+
+    &__content {
+      max-width: 500px;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 45px;
+      }
+
+      form {
+        flex-direction: row;
+
+        input {
+          width: 100%;
+        }
+
+        .btn {
+          margin-left: -175px;
+          width: 175px;
+        }
+      }
+    }
+
+    &__img {
+      height: 300px;
+      background-size: 250px;
+      background-position: top -50px center;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &__content {
+      max-width: 600px;
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    &__img {
+      height: 400px;
+      background-size: 330px;
+      background-position: top -60px center;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      place-items: center;
+      padding-top: 30px;
+    }
+
+    &__content {
+      h1 {
+        text-align: left;
+        font-size: 70px;
+      }
+
+      span {
+        text-align: left;
+        margin-left: 15px;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 500px;
+
+      background-size: 415px;
+      background-position: center center;
+    }
+  }
+}

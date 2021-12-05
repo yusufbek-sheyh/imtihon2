@@ -1,0 +1,114 @@
+.header {
+  height: 120px;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // &__logo {
+  // }
+
+  &__menu {
+    input {
+      display: none;
+    }
+    label {
+      position: relative;
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      display: block;
+      background: url("/assets/shared/mobile/menu.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    ul {
+      position: fixed;
+      background: $primary-dark;
+      background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
+      background-repeat: no-repeat;
+      background-size: 270%;
+      background-position: top -580px center;
+      width: 81vw;
+      height: 100vh;
+      top: 0;
+      right: -81vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 45px;
+      transition: 0.4s ease;
+
+      .line {
+        width: 84%;
+        height: 1px;
+        background: $gray;
+        margin: 95px auto 50px;
+      }
+
+      a {
+        color: $gray;
+        font-weight: 600;
+      }
+
+      .btn {
+        width: 71.4vw;
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+
+    input:checked ~ ul {
+      right: 0;
+    }
+    input:checked ~ label {
+      background-image: url("/assets/shared/mobile/close.svg");
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    &__menu {
+      width: 100%;
+      margin-left: 65px;
+
+      label {
+        display: none;
+      }
+
+      ul {
+        all: unset;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        .line {
+          display: none;
+        }
+
+        .sep {
+          margin-left: auto;
+        }
+
+        a {
+          color: $primary-light;
+        }
+
+        .btn {
+          width: 175px;
+        }
+      }
+    }
+  }
+}

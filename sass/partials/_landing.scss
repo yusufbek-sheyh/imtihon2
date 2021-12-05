@@ -1,0 +1,24 @@
+.landing {
+  background: url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: top -515px center;
+  padding-bottom: 75px;
+
+  @media screen and (min-width: 768px) {
+    background-size: 140%;
+    background-position: top -800px center;
+  }
+  @media screen and (min-width: 1024px) {
+    background-size: 140%;
+    background-position: top -1050px center;
+  }
+  @media screen and (min-width: 1200px) {
+    background-size: 800px;
+    background-position: top -200px right -50px;
+  }
+  @media screen and (min-width: 1900px) {
+    background-size: 1100px;
+    background-position: top -200px right -200px;
+  }
+}

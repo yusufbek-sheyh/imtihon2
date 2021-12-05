@@ -1,0 +1,22 @@
+$white: #fff;
+$primary: #35536b;
+$primary-dark: #1c262f;
+$primary-light: #667c91;
+$primary-light-extra: #eef3f9;
+$gray: #a5adb0;
+$secondary: #ba4270;
+
+
+@import 'normalize';
+@import 'general';
+@import "partials/reset";
+@import "partials/landing";
+@import "partials/header";
+@import "partials/hero";
+@import "partials/partners";
+@import "partials/implement";
+@import "partials/uiux";
+@import "partials/cards";
+@import "partials/start";
+@import "partials/footer";
+

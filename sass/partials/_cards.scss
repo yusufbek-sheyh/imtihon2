@@ -1,0 +1,60 @@
+.cards {
+  padding-bottom: 100px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 55px;
+  }
+
+  .card {
+    text-align: center;
+    img {
+      width: 110px;
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      color: $primary;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: $primary;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .card {
+      img {
+        width: 87px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .container {
+      gap: 50px;
+    }
+    .card {
+      img {
+        width: 110px;
+      }
+
+      p {
+        margin: 0 auto;
+        max-width: 90%;
+        font-size: 15px;
+      }
+    }
+  }
+}
