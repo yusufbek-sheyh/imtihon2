@@ -62,7 +62,7 @@ textarea {
 }
 
 .landing {
-  background: url("/img/bg-pattern-circle.svg");
+  background: url("bg-pattern-circle.svg");
   background-repeat: no-repeat;
   background-size: 200%;
   background-position: top -515px center;
@@ -124,7 +124,7 @@ textarea {
   width: 30px;
   height: 30px;
   display: block;
-  background: url("/img/menu.svg");
+  background: url("menu.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -132,7 +132,7 @@ textarea {
 .header__menu ul {
   position: fixed;
   background: #1c262f;
-  background-image: url("/img/bg-pattern-circle.svg");
+  background-image: url("bg-pattern-circle.svg");
   background-repeat: no-repeat;
   background-size: 270%;
   background-position: top -580px center;
@@ -179,7 +179,7 @@ textarea {
 }
 
 .header__menu input:checked ~ label {
-  background-image: url("/img/close.svg");
+  background-image: url("close.svg");
 }
 
 @media screen and (min-width: 768px) {
@@ -300,7 +300,7 @@ textarea {
 
 .hero__img {
   height: 250px;
-  background: url("/img/illustration-phone-mockup.svg");
+  background: url("illustration-phone-mockup.svg");
   background-repeat: no-repeat;
   background-size: 200px;
   background-position: top -33px center;
@@ -380,7 +380,7 @@ textarea {
 .partners {
   background: #1c262f;
   padding: 85px 0;
-  background-image: url("/img/bg-pattern-circle.svg");
+  background-image: url("bg-pattern-circle.svg");
   background-repeat: no-repeat;
   background-size: 170%;
   background-position: top -500px center;
@@ -634,7 +634,7 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .uiux {
-    background-image: url("/img/bg-pattern-circle.svg");
+    background-image: url("bg-pattern-circle.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top right -270px;
@@ -840,7 +840,7 @@ textarea {
 .footer {
   background: #1c262f;
   padding: 40px 0;
-  background-image: url("/img/bg-pattern-circle.svg");
+  background-image: url("bg-pattern-circle.svg");
   background-repeat: no-repeat;
   background-size: 150%;
   background-position: bottom -380px center;
