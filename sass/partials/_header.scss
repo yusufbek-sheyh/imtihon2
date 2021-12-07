@@ -21,7 +21,7 @@
       width: 30px;
       height: 30px;
       display: block;
-      background: url("/assets/shared/mobile/menu.svg");
+      background: url("/img/menu.svg");
       background-repeat: no-repeat;
       background-position: center center;
     }
@@ -29,7 +29,7 @@
     ul {
       position: fixed;
       background: $primary-dark;
-      background-image: url("/assets/shared/desktop/bg-pattern-circle.svg");
+      background-image: url("/img/bg-pattern-circle.svg");
       background-repeat: no-repeat;
       background-size: 270%;
       background-position: top -580px center;
@@ -67,7 +67,7 @@
       right: 0;
     }
     input:checked ~ label {
-      background-image: url("/assets/shared/mobile/close.svg");
+      background-image: url("/img/close.svg");
     }
   }
 
